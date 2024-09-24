@@ -89,7 +89,13 @@ public class StorageDevice : ComputerEquipment
 // Класс для материнских плат
 public class Motherboard : ComputerEquipment
 {
-    public Motherboard(string name) : base(name) { }
+    public Int32 GPU;
+    public Motherboard(string name, Int32 GPU) : base(name) 
+    {
+    this.GPU = GPU;
+    }
+
+   
 }
 
 // Класс для процессоров
@@ -128,4 +134,15 @@ public class AudioSpeakers : ComputerEquipment
         Console.WriteLine($"Аудиоколонки: {Name}");
     }
 }
+
+public class Vanamas
+{
+    public static void check(Motherboard motherboard)
+    {
+        if(motherboard.GPU < 4090)
+        {
+            Console.WriteLine("Глаза вытекли");
+        }
+    }
+} 
 
