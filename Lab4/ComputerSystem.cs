@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lab3.Interfaces;
+using Lab4.Interfaces;
 
-namespace Lab3
+namespace Lab4
 {
     internal class ComputerSystem
     {
@@ -12,18 +12,21 @@ namespace Lab3
         {
             components.Add(component);
         }
+
         public void CheckMileage()
         {
             if (components.Count > 0)
             {
                 foreach (var item in components)
                 {
-                    if (item is IMileage){
+                    if (item is IMileage)
+                    {
                         Console.WriteLine(((IMileage)item).GetMileage());
                     }
                 }
             }
         }
+
         public void ConnectComponents()
         {
             foreach (var component1 in components)
@@ -54,4 +57,3 @@ namespace Lab3
         }
     }
 }
-
