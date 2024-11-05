@@ -10,6 +10,7 @@ namespace Lab4.Classes
     internal class KeyBoard : IUsbBus
     {
         public double MaxTransferSpeedUsb { get; } = 500;
+        public Boolean IsBroken { get; set; } = true;
 
         public delegate void TransferDataDelegate();
         public event TransferDataDelegate TransferDataUsbEvent;

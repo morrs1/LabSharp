@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 namespace Lab4.Classes
 {
     internal class HardDisk : ISata, IMileage
+
+
     {
+        public Boolean IsBroken { get; set; }
         private double mileage = 2222;
         public double MaxTransferSpeedSata { get; } = 1000;
 

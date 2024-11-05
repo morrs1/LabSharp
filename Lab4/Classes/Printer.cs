@@ -10,6 +10,7 @@ namespace Lab4.Classes
 {
     internal class Printer : IUsbBus, INetWork
     {
+        public Boolean IsBroken { get; set; } = false;
         public double MaxTransferSpeedNetWork { get; } = 1000;
         public double MaxTransferSpeedUsb { get; } = 500;
 

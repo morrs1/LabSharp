@@ -12,7 +12,7 @@ namespace Lab4.Classes
     {
         public double MaxTransferSpeedNetWork { get; } = 1000;
         public double MaxTransferSpeedUsb { get; } = 500;
-
+        public Boolean IsBroken { get; set; } = true;
         public delegate void TransferDataDelegate();
         public event TransferDataDelegate TransferDataNetWorkEvent;
         public event TransferDataDelegate TransferDataUsbEvent;

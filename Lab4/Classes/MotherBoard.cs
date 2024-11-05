@@ -11,6 +11,7 @@ namespace Lab4.Classes
 {
     internal class MotherBoard : IInnerBus, INetWork, IUsbBus, ISata
     {
+        public Boolean IsBroken { get; set; } = false;
         public double MaxTransferSpeedNetWork { get; } = 3000;
         public double MaxTransferSpeedUsb { get; } = 1000;
         public double MaxTransferSpeedInnerBus { get; } = 1000;

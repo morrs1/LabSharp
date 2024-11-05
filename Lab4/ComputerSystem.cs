@@ -6,11 +6,15 @@ namespace Lab4
 {
     internal class ComputerSystem
     {
-        private List<object> components = [];
+        private List<object> components = new List<object>();
+
+        public delegate void ComponentAddedDelegate(object component);
+        public event ComponentAddedDelegate ComponentAdded;
 
         public void AddComponent(object component)
         {
             components.Add(component);
+            ComponentAdded?.Invoke(component);
         }
 
         public void CheckMileage()

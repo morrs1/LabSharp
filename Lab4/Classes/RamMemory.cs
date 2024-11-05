@@ -9,6 +9,7 @@ namespace Lab4.Classes
 {
     internal class RamMemory : IInnerBus
     {
+        public Boolean IsBroken { get; set; } = false;
         public double MaxTransferSpeedInnerBus { get; } = 10000;
 
         public delegate void TransferDataDelegate();

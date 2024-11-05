@@ -11,7 +11,7 @@ namespace Lab4.Classes
     internal class NetworkCard : INetWork
     {
         public double MaxTransferSpeedNetWork { get; } = 5000;
-
+        public Boolean IsBroken { get; set; } = false;
         public delegate void TransferDataDelegate();
         public event TransferDataDelegate TransferDataNetWorkEvent;
 

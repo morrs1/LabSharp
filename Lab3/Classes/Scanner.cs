@@ -9,6 +9,7 @@ namespace Lab3.Classes
 {
     internal class Scanner : INetWork, IUsbBus
     {
+        public Boolean IsBroken { get; set; } = false;
         public double MaxTransferSpeedNetWork { get; } = 1000;
 
         public double MaxTransferSpeedUsb { get; } = 500;
