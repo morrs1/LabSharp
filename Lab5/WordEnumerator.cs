@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public class WordEnumerator : IEnumerator<string>
 {
@@ -13,7 +15,7 @@ public class WordEnumerator : IEnumerator<string>
 
     public string Current => _words[_position];
 
-    object System.Collections.IEnumerator.Current => Current;
+    object IEnumerator.Current => Current;
 
     public bool MoveNext()
     {
@@ -44,10 +46,22 @@ public class WordCollection : IEnumerable<string>
         return new WordEnumerator(words);
     }
 
-    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+    IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
     }
-}
 
+    public string GetLongestWord()
+    {
+        string longestWord = string.Empty;
+        foreach (var word in this)
+        {
+            if (word.Length > longestWord.Length)
+            {
+                longestWord = word;
+            }
+        }
+        return longestWord;
+    }
+}
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class WordCollection1
 {
@@ -19,5 +20,17 @@ public class WordCollection1
             yield return word;
         }
     }
-}
 
+    public string GetLongestWord()
+    {
+        string longestWord = string.Empty;
+        foreach (var word in GetWordsSortedByLength())
+        {
+            if (word.Length > longestWord.Length)
+            {
+                longestWord = word;
+            }
+        }
+        return longestWord;
+    }
+}
