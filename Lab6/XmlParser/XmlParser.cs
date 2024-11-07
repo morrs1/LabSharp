@@ -5,7 +5,7 @@ namespace Lab6.XmlParser;
 
 public class XmlParser
 {
-    private const string FILE_PATH = @"C:\Users\grish\RiderProjects\LabSharp\Lab6\xmls\Users.xml";
+    private const string FILE_PATH = @"..\..\..\xmls\Users.xml";
     private XmlSerializer _xmlSerializer = new(typeof(Users));
 
     public void serialize(Users users)
