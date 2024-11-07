@@ -1,0 +1,12 @@
+﻿<Emails>
+    <Email>
+        <from>Egor</from>
+        <to>Danya</to>
+        <message>aboba</message>
+    </Email>
+    <Email>
+        <from>Danya</from>
+        <to>Egor</to>
+        <message>aboba2</message>
+    </Email>
+</Emails>
