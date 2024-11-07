@@ -4,25 +4,30 @@
     <from>Egor</from>
     <to>Danya</to>
     <message>aboba</message>
+    <dateTime>2024-11-07T17:53:56</dateTime>
   </Email>
   <Email>
     <from>Danya</from>
     <to>Egor</to>
     <message>aboba2</message>
+    <dateTime>2024-11-07T17:53:56</dateTime>
   </Email>
   <Email>
     <from>Egor</from>
     <to>Danya</to>
     <message>aboba3</message>
+    <dateTime>2024-11-07T17:53:56</dateTime>
   </Email>
   <Email>
     <from>Egor</from>
     <to>Danya</to>
     <message>aboba4</message>
+    <dateTime>2024-11-07T17:53:56</dateTime>
   </Email>
   <Email>
     <from>Egor</from>
     <to>Danya</to>
     <message>aboba12</message>
+    <dateTime>2024-11-07T17:53:56</dateTime>
   </Email>
 </Emails>
