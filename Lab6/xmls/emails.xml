@@ -20,4 +20,9 @@
     <to>Danya</to>
     <message>aboba4</message>
   </Email>
+  <Email>
+    <from>Egor</from>
+    <to>Danya</to>
+    <message>aboba12</message>
+  </Email>
 </Emails>
