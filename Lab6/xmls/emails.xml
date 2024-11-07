@@ -1,12 +1,23 @@
-﻿<Emails>
-    <Email>
-        <from>Egor</from>
-        <to>Danya</to>
-        <message>aboba</message>
-    </Email>
-    <Email>
-        <from>Danya</from>
-        <to>Egor</to>
-        <message>aboba2</message>
-    </Email>
+<?xml version="1.0" encoding="utf-8"?>
+<Emails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Email>
+    <from>Egor</from>
+    <to>Danya</to>
+    <message>aboba</message>
+  </Email>
+  <Email>
+    <from>Danya</from>
+    <to>Egor</to>
+    <message>aboba2</message>
+  </Email>
+  <Email>
+    <from>Egor</from>
+    <to>Danya</to>
+    <message>aboba3</message>
+  </Email>
+  <Email>
+    <from>Egor</from>
+    <to>Danya</to>
+    <message>aboba4</message>
+  </Email>
 </Emails>
