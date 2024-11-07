@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <User />
-  <User />
+    <User>
+        <username>Egor</username>
+        <password>123</password>
+    </User>
+    <User>
+        <username>Danya</username>
+        <password>1234</password>
+    </User>
 </Users>
